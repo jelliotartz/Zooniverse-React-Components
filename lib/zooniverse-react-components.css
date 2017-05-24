@@ -27,6 +27,13 @@
   top: 0;
   right: 0;
 }
+.file-drop-target {
+  border: 2px dashed transparent;
+  border-radius: 3px;
+}
+.file-drop-target[data-can-drop] {
+  border-color: #43bbfd;
+}
 .media-icon {
   font-size: 12px;
   text-align: center;
@@ -63,12 +70,22 @@
   white-space: pre;
   width: 100%;
 }
-.file-drop-target {
-  border: 2px dashed transparent;
-  border-radius: 3px;
+.paginator {
+  text-align: center;
 }
-.file-drop-target[data-can-drop] {
-  border-color: #43bbfd;
+.paginator > button {
+  margin: 5px;
+}
+.paginator .paginator-page-selector {
+  display: inline-block;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+.paginator .paginator-prev {
+  background: none;
+}
+.paginator .paginator-next {
+  background: none;
 }
 .zooniverse-logo {
   position: relative;
